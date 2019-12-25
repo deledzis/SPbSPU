@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DefaultCardListItem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/department_details_contacts_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/department_content_contacts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/CardTitle"
+                />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_details_contacts_map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="12dp"
+                tools:text="9-й учебный корпус, ул. Политехническая, дом 21, Санкт-Петербург, 194021"
+                android:theme="@style/AboutCardActionsButton"
+                android:gravity="center_vertical"
+                app:icon="@drawable/ic_location"
+                app:layout_constraintStart_toStartOf="@+id/department_details_contacts_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/department_details_contacts_title"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_details_contacts_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="8dp"
+                tools:text="office@icc.spbstu.ru"
+                android:theme="@style/AboutCardActionsButton"
+                android:gravity="center_vertical"
+                app:icon="@drawable/ic_email"
+                app:layout_constraintStart_toStartOf="@+id/department_details_contacts_map"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/department_details_contacts_map"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_details_contacts_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="+7 (812) 297-16-28"
+                android:theme="@style/AboutCardActionsButton"
+                android:gravity="center_vertical"
+                app:icon="@drawable/ic_call"
+                app:layout_constraintStart_toStartOf="@+id/department_details_contacts_email"
+                app:layout_constraintTop_toBottomOf="@+id/department_details_contacts_email"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+
+        <!--<com.google.android.material.button.MaterialButton
+                android:id="@+id/department_details_contacts_phone_additional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="+7 (812) 297-16-47"
+                android:theme="@style/AboutCardActionsButton"
+                android:gravity="center_vertical"
+                app:icon="@drawable/ic_call"
+                app:layout_constraintStart_toStartOf="@+id/department_details_contacts_phone"
+                app:layout_constraintTop_toBottomOf="@+id/department_details_contacts_phone"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />-->
+
+        <!--<TextView
+                android:id="@+id/about_institute_contacts_phone_title"
+                style="@style/AboutText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="Приёмная директора"
+                app:layout_constraintBottom_toBottomOf="@+id/department_details_contacts_phone"
+                app:layout_constraintEnd_toEndOf="@+id/department_details_contacts_email"
+                app:layout_constraintStart_toEndOf="@+id/department_details_contacts_phone"
+                app:layout_constraintTop_toTopOf="@+id/department_details_contacts_phone"
+                />-->
+
+        <!--<TextView
+                android:id="@+id/department_details_contacts_phone_additional_title"
+                style="@style/AboutText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="Деканат"
+                app:layout_constraintBottom_toBottomOf="@+id/department_details_contacts_phone_additional"
+                app:layout_constraintEnd_toEndOf="@+id/department_details_contacts_email"
+                app:layout_constraintStart_toEndOf="@+id/department_details_contacts_phone_additional"
+                app:layout_constraintTop_toTopOf="@+id/department_details_contacts_phone_additional"
+                />-->
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_details_contacts_url"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:letterSpacing=".01"
+                android:text="@string/card_action_url"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_planet"
+                app:iconGravity="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/department_details_contacts_phone"
+                app:layout_constraintTop_toBottomOf="@id/department_details_contacts_phone"
+                />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

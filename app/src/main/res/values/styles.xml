@@ -1,0 +1,150 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Collapsed" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Expanded" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- Toolbar Styles -->
+    <style name="DefaultToolbar">
+        <item name="layout_collapseMode">pin</item>
+        <item name="contentInsetEnd">8dp</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="DefaultCollapsingToolbar">
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.MyApp.Title.Expanded</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.MyApp.Title.Collapsed</item>
+        <item name="expandedTitleMarginEnd">18dp</item>
+        <item name="expandedTitleMarginStart">18dp</item>
+        <item name="expandedTitleMarginTop">36dp</item>
+        <item name="expandedTitleGravity">top|start</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed|snap</item>
+        <item name="scrimAnimationDuration">200</item>
+        <item name="maxLines">5</item>
+    </style>
+
+    <style name="ContentUnderToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
+    </style>
+
+    <!-- CardView Styles -->
+    <style name="DefaultCardListItem">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">8dp</item>
+    </style>
+
+    <!-- TextView Styles -->
+    <style name="Text">
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="BottomSheetTitle" parent="Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CardText" parent="Text">
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+    </style>
+
+    <style name="CardTitle" parent="CardText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="CardMedium" parent="CardText">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="CardRegular" parent="CardText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MenuAction" parent="Text">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StudyProgramTitle" parent="Text">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="StudyProgramCode" parent="Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StudyProgramRegular" parent="Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AboutText" parent="Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="DefaultButton">
+        <item name="android:letterSpacing">.01</item>
+    </style>
+
+    <style name="CardActionButton" parent="DefaultButton">
+        <item name="android:maxEms">10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AboutCardActionsButton" parent="DefaultButton">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Polytech Applicant</string>
+
+    <string name="study_programs_valued">%1$d Study Programs</string>
+    <string name="full_time_valued">Full-time | %1$d pl.</string>
+    <string name="extramural_valued">Extramural | %1$d pl.</string>
+    <string name="part_time_valued">Part-time | %1$d pl.</string>
+    <string name="position_valued" translatable="false">%1$s — %2$s</string>
+    <string name="left_valued">and also %1$d…</string>
+    <string name="directorate_persons_valued">Directorate Staff: %1$d pers.</string>
+    <string name="subdepartments_valued">Internal Departments: %1$d</string>
+    <string name="subprograms_valued">Sub Programs: %1$d</string>
+
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="calendar_title">Polytech admission event</string>
+    <string name="calendar_message">Event \"%1$s\" will be added.\nDate: %2$s</string>
+
+    <string name="dialog_action_open_site">Open site</string>
+    <string name="dialog_site_url">An external link will be opened in your browser.\nSite URL: %1$s</string>
+    <string name="dialog_action_dial">Dial Number</string>
+    <string name="dialog_phone_number">Dial application will be opened with pre-pasted number.\nPhone number: %1$s</string>
+    <string name="dialog_action_write_email">Write an email</string>
+    <string name="dialog_email">Mail application will be opened with pre-pasted receiver address.\nEmail address: %1$s</string>
+
+    <string name="available_education_forms">Available education forms</string>
+    <string name="available_sub_programs">Sub Programs</string>
+
+    <string name="documents">Documents</string>
+
+    <string name="card_action_url">Open site</string>
+    <string name="card_action_dial">Dial</string>
+    <string name="card_action_mail">Write</string>
+
+    <string name="full_description">Full description</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="outdated_events">Outdated Events</string>
+
+    <string name="persons_responsibilities">Responsibilities</string>
+    <string name="persons_positions">Positions</string>
+
+    <string name="person_contacts">Contacts</string>
+    <string name="person_degree">Academic Degree</string>
+
+    <string name="title_timeline">Admission Timeline</string>
+    <string name="title_structure">University Structure</string>
+    <string name="title_locations">Locations</string>
+    <string name="title_questions">Admission Questions</string>
+
+    <string name="menu_filter_locations">Filter markers</string>
+    <string name="locations_filter_option_with_enroll">Enrollment</string>
+    <string name="locations_filter_option_others">Others</string>
+
+    <string name="institute_ih">Institute of Humanities</string>
+    <string name="institute_icst">Institute of Computer Science and Technology</string>
+    <string name="institute_iamm">Institute of Applied Mathematics and Mechanics</string>
+    <string name="institute_iets">Institute of Energy and Transport Systems</string>
+    <string name="institute_ice">Institute of Civil Engineering</string>
+    <string name="institute_immet">Institute of Metallurgy, Mechanical Engineering and Transport</string>
+    <string name="institute_ipnt">Institute of Physics, Nanotechnology and Telecommunications</string>
+    <string name="institute_iimet">Institute of Industrial Management, Economics and Trade</string>
+    <string name="institute_iiep">Institute of International Educational Programs</string>
+    <string name="institute_iamt">Institute of Advanced Manufacturing Technologies</string>
+
+
+    <string name="abbreviation_ih">IH</string>
+    <string name="abbreviation_icst">ICST</string>
+    <string name="abbreviation_iamm">IAMM</string>
+    <string name="abbreviation_iets">IETS</string>
+    <string name="abbreviation_ice">ICE</string>
+    <string name="abbreviation_immet">IMMET</string>
+    <string name="abbreviation_ipnt">IPNT</string>
+    <string name="abbreviation_iimet">IIMET</string>
+    <string name="abbreviation_iiep">IIEP</string>
+    <string name="abbreviation_iamt">IAMT</string>
+
+
+    <string name="buildings_main_building">Main Building</string>
+
+
+    <string name="menu_entrance_array_item_01">Necessary documents</string>
+    <string name="menu_entrance_array_item_02">Enrollment rules</string>
+    <string name="menu_entrance_array_item_03">Why choose Polytech?</string>
+    <string name="menu_entrance_array_item_04">Contacts</string>
+    <string name="menu_entrance_array_item_05">Military Department</string>
+    <string name="menu_entrance_array_item_06">Foreigners Enrollment</string>
+    <string name="menu_entrance_array_item_07">Dormitories</string>
+
+
+    <string name="funding_forms_government">Government</string>
+    <string name="funding_forms_self">Self-Funding</string>
+
+
+    <string name="educations_form_full_time">Full-time</string>
+    <string name="educations_form_extramural">Extramural</string>
+    <string name="educations_form_part_time">Part-time</string>
+
+
+    <string name="institute_content_study_programs">Study Programs</string>
+    <string name="institute_content_about">About Institute</string>
+    <string name="institute_content_departments">Departments</string>
+    <string name="institute_content_directorate">Directorate</string>
+    <string name="institute_content_contacts">Contacts</string>
+    <string name="institute_content_show_on_map">Show on Map</string>
+
+
+    <string name="department_content_info">Information</string>
+    <string name="department_content_employees">Employees</string>
+    <string name="department_content_structure">Structure</string>
+    <string name="department_content_description">Description</string>
+    <string name="department_content_contacts">Contacts</string>
+
+
+    <string name="academic_degree_no">No degree</string>
+    <string name="academic_degree_assistant">Assistant Professor</string>
+    <string name="academic_degree_candidate">Candidate of Sciences</string>
+    <string name="academic_degree_doctor">Doctor of Sciences</string>
+    
+    <string name="position_director">Director</string>
+    <string name="position_acting_director">Acting Director</string>
+    <string name="position_head_of_department">Head of Department</string>
+    <string name="position_assistant">Assistant Professor</string>
+    <string name="position_professor">Professor</string>
+    <string name="position_resp_international">Responsible for international activities</string>
+    <string name="position_resp_full_time_students">Responsible for working with full-time students</string>
+
+
+    <string name="image_description_logo" translatable="false">Polytech logo</string>
+    <string name="image_description_institute_background" translatable="false">Institute form style background</string>
+    <string name="image_description_menu_item_icon" translatable="false">Menu item icon</string>
+    <string name="image_description_technical_support_image" translatable="false">Technical support image</string>
+    <string name="image_description_profile_photo" translatable="false">Person profile photo</string>
+    <string name="image_description_department_logo" translatable="false">Department logo</string>
+
+
+    <string name="error_fragment_is_null" translatable="false">Error: current Fragment is null in FragmentManager</string>
+</resources>

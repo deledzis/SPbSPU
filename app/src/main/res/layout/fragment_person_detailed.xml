@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/layout_substrate"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                app:title="Азар Илья Запубенко"
+                style="@style/DefaultCollapsingToolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    style="@style/DefaultToolbar">
+
+                <Space
+                        android:id="@+id/circle_collapsed_target"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--<com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp">-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_top_corners_bg">
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/person_detailed_resps_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:text="@string/persons_responsibilities"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        style="@style/CardTitle"
+                />
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/person_detailed_resps_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        tools:text="И.о. директора - Институт компьютерных наук и технологий"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_resps_title"
+                        style="@style/CardRegular"
+                />
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/person_detailed_position_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/persons_positions"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_resps_content"
+                        style="@style/CardTitle"
+                />
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/person_detailed_position_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        tools:text="И.о. директора - Институт компьютерных наук и технологий"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_position_title"
+                        style="@style/CardRegular"
+                />
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/person_detailed_degree_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/person_degree"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_position_content"
+                        style="@style/CardTitle"
+                />
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/person_detailed_degree_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        tools:text="Доцент"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_degree_title"
+                        style="@style/CardRegular"
+                />
+
+                <TextView
+                        android:id="@+id/person_detailed_contacts_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/person_contacts"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_degree_content"
+                        style="@style/CardTitle"
+                />
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/person_detailed_contacts_map"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:theme="@style/AboutCardActionsButton"
+                        app:icon="@drawable/ic_location"
+                        app:layout_constraintEnd_toEndOf="@+id/person_detailed_contacts_title"
+                        app:layout_constraintStart_toStartOf="@+id/person_detailed_contacts_title"
+                        app:layout_constraintTop_toBottomOf="@+id/person_detailed_contacts_title"
+                        tools:text="9-й учебный корпус, ул. Политехническая, дом 21, Санкт-Петербург, 194021"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/person_detailed_contacts_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:theme="@style/AboutCardActionsButton"
+                        app:icon="@drawable/ic_email"
+                        app:layout_constraintEnd_toEndOf="@+id/person_detailed_contacts_title"
+                        app:layout_constraintStart_toStartOf="@+id/person_detailed_contacts_title"
+                        app:layout_constraintTop_toBottomOf="@+id/person_detailed_contacts_map"
+                        tools:text="office@icc.spbstu.ru"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/person_detailed_contacts_phone"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:theme="@style/AboutCardActionsButton"
+                        app:icon="@drawable/ic_call"
+                        app:layout_constraintStart_toStartOf="@+id/person_detailed_contacts_title"
+                        app:layout_constraintEnd_toEndOf="@+id/person_detailed_contacts_title"
+                        app:layout_constraintTop_toBottomOf="@+id/person_detailed_contacts_email"
+                        tools:text="+7 (812) 297-16-28"
+                />
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/person_detailed_contacts_url"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="32dp"
+                        android:letterSpacing=".01"
+                        android:text="@string/card_action_url"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_planet"
+                        app:iconGravity="textStart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/person_detailed_contacts_phone"
+                        app:layout_constraintTop_toBottomOf="@id/person_detailed_contacts_phone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--</com.google.android.material.card.MaterialCardView>-->
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+            android:id="@+id/person_detailed_profile_photo"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@drawable/placeholder_profile_photo_round"
+            android:layout_marginTop="170dp"
+            android:layout_gravity="top|center_horizontal"
+            android:elevation="8dp"
+            app:collapsedTarget="@id/circle_collapsed_target"
+            app:layout_behavior=".util.CollapsingImageBehavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

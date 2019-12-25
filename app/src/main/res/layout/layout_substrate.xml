@@ -1,0 +1,32 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/substrate_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <ImageView
+            android:id="@+id/substrate_image_anchor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:contentDescription="@string/image_description_technical_support_image"
+            app:srcCompat="@drawable/menu_texture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+            android:id="@+id/substrate_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="160dp"
+            android:contentDescription="@string/image_description_technical_support_image"
+            app:srcCompat="@drawable/iamm_texture"
+            app:layout_constraintStart_toStartOf="@id/substrate_image_anchor"
+            app:layout_constraintEnd_toEndOf="@id/substrate_image_anchor"
+            app:layout_constraintBottom_toBottomOf="@id/substrate_image_anchor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

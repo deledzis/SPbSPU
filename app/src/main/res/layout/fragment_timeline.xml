@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/layout_substrate" />
+
+    <include layout="@layout/layout_collapsing_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/fragment_dashboard_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_anchorGravity="top"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/outdated_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outdated_events"
+                    style="@style/BottomSheetTitle"
+            />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_outdated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/list_item_timeline_event"
+                    tools:itemCount="5"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@color/colorSeparator"
+            />
+
+            <TextView
+                    android:id="@+id/upcoming_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/upcoming_events"
+                    style="@style/BottomSheetTitle"
+            />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_upcoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/list_item_timeline_event"
+                    tools:itemCount="5"
+            />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/bottom_sheet_menu_item" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "156959537953",
+    "firebase_url": "https://polytech-applicant.firebaseio.com",
+    "project_id": "polytech-applicant",
+    "storage_bucket": "polytech-applicant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156959537953:android:49ac3fad2318e975",
+        "android_client_info": {
+          "package_name": "ru.spbstu.abit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156959537953-pjgcegs5v026ujjocu8qh7g0u98hhu3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.spbstu.abit",
+            "certificate_hash": "ddbf3ca93afe31481522bf20f9d6c9e590c9e9e4"
+          }
+        },
+        {
+          "client_id": "156959537953-a5u8lvbj3rha64lrrvpmaj7ojs9edqt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHz3AIJYJrNq361hfr1duf6E_Y2jlkIO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156959537953-a5u8lvbj3rha64lrrvpmaj7ojs9edqt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

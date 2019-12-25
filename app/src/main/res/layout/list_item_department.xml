@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DefaultCardListItem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!--<ImageView
+                android:id="@+id/department_logo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/image_description_department_logo"
+                />-->
+
+        <TextView
+                android:id="@+id/department_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                tools:text="Alex Simon Alex SimonAlex SimonAlex SimonAlex SimonAlex SimonAlex SimonAlex SimonAlex Simon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/CardTitle"
+                />
+
+        <!--<Space
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/department_title_text" />-->
+
+        <TextView
+                android:id="@+id/department_directorate_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="visible"
+                tools:text="@string/directorate_persons_valued"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/department_title_text"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/CardRegular"
+                />
+
+        <TextView
+                android:id="@+id/department_subs_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="@string/subdepartments_valued"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/department_directorate_text"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/CardRegular"
+                />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_url_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:letterSpacing=".01"
+                android:text="@string/card_action_url"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_planet"
+                app:iconGravity="textStart"
+                app:layout_constraintStart_toStartOf="@+id/department_title_text"
+                app:layout_constraintTop_toBottomOf="@id/department_subs_text"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                />
+
+        <View
+                android:id="@+id/department_separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorSeparator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/department_url_button"
+        />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_phone_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_action_dial"
+                android:theme="@style/CardActionButton"
+                app:icon="@drawable/ic_call"
+                app:layout_constraintStart_toStartOf="@+id/department_title_text"
+                app:layout_constraintTop_toBottomOf="@+id/department_separator" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/department_email_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/card_action_mail"
+                android:theme="@style/CardActionButton"
+                app:icon="@drawable/ic_email"
+                app:layout_constraintStart_toEndOf="@+id/department_phone_button"
+                app:layout_constraintTop_toBottomOf="@+id/department_separator"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

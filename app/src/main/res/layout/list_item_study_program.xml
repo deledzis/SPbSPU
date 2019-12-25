@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DefaultCardListItem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/program_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="16dp">
+
+        <TextView
+                android:id="@+id/program_item_name_text"
+                style="@style/StudyProgramTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                tools:text="Фундаментальная информатика и информационные технологии"
+                app:layout_constraintEnd_toStartOf="@id/program_item_code_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView
+                android:id="@+id/program_item_code_text"
+                style="@style/StudyProgramCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                tools:text="02.03.02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <com.google.android.material.chip.ChipGroup
+                android:id="@+id/program_item_chip_group_ege"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:chipSpacingHorizontal="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/program_item_name_text"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/program_item_name_text"
+                app:layout_constraintTop_toBottomOf="@+id/program_item_name_text">
+
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/program_item_chip_ege1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="М"
+            />
+
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/program_item_chip_ege2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="И"
+            />
+
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/program_item_chip_ege3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="Р"
+            />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+                android:id="@+id/program_item_available_subdirections_text"
+                style="@style/StudyProgramRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/subprograms_valued"
+                app:layout_constraintEnd_toEndOf="@+id/program_item_name_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/program_item_chip_group_ege"
+        />
+
+        <ImageView
+                android:id="@+id/program_item_detailed_arrow"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/program_item_available_subdirections_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/program_item_available_subdirections_text"
+                app:srcCompat="@drawable/ic_detail_arrow"
+        />
+
+        <!--<androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/program_item_forms_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/stroked_bg"а
+                app:layout_constraintEnd_toEndOf="@+id/program_item_available_forms_text"
+                app:layout_constraintStart_toStartOf="@+id/program_item_available_forms_text"
+                app:layout_constraintTop_toBottomOf="@id/program_item_available_forms_text">
+
+            <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/program_item_gfund_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:flexWrap="wrap"
+                    app:showDivider="middle"
+                    app:dividerDrawable="@drawable/flex_box_divider"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:id="@+id/program_item_gfund_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_bg"
+                        android:text="@string/funding_forms_government"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_gfund_o_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:text="@string/educations_form_full_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_gfund_z_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/educations_form_extramural"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_gfund_oz_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/educations_form_part_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/program_item_sfund_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:flexWrap="wrap"
+                    app:showDivider="middle"
+                    app:dividerDrawable="@drawable/flex_box_divider"
+                    app:layout_constraintTop_toBottomOf="@id/program_item_gfund_layout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:id="@+id/program_item_sfund_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_medium"
+                        android:maxLines="1"
+                        android:text="@string/funding_forms_self"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_sfund_o_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="@string/educations_form_full_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_sfund_z_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="@string/educations_form_extramural"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_sfund_oz_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="@string/educations_form_part_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_item_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="₽ 75,000"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_price_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--<TextView
+                android:id="@+id/program_item_available_subdirections_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Поднаправления"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:background="@drawable/stroked_bg"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/program_item_forms_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+        />-->
+
+        <!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/program_item_subitems_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/program_item_available_subdirections_text"
+                tools:listitem="@layout/list_item_study_subprogram"
+                tools:itemCount="2"
+        />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

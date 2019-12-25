@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="24dp">
+
+    <View
+            android:id="@+id/program_subitem_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorSeparator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView
+            android:id="@+id/program_subitem_name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="\u00ABЭлектростанции и электроэнергетические системы\u00BB"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@+id/program_subitem_separator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/program_subitem_id_text"
+    />
+
+    <TextView
+            android:id="@+id/program_subitem_id_text"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="5"
+            android:textColor="@color/colorIammPrimary"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/circle_menu_icon_bg"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@+id/program_subitem_name_text"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView
+            android:id="@+id/program_subitem_available_forms_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/available_education_forms"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@+id/program_subitem_name_text"
+            app:layout_constraintStart_toStartOf="@+id/program_subitem_name_text"
+            app:layout_constraintEnd_toEndOf="@+id/program_subitem_id_text"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/stroked_bg"
+            app:layout_constraintEnd_toEndOf="@+id/program_subitem_id_text"
+            app:layout_constraintStart_toStartOf="@+id/program_subitem_name_text"
+            app:layout_constraintTop_toBottomOf="@id/program_subitem_available_forms_text">
+
+
+            <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/program_subitem_gfund_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:flexWrap="wrap"
+                    app:showDivider="middle"
+                    android:visibility="gone"
+                    app:dividerDrawable="@drawable/flex_box_divider"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:id="@+id/program_subitem_gfund_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_bg"
+                        android:text="@string/funding_forms_government"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_gfund_o_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:text="@string/educations_form_full_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_gfund_z_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/educations_form_extramural"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_gfund_oz_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/educations_form_part_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/program_subitem_sfund_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:flexWrap="wrap"
+                    app:showDivider="middle"
+                    app:dividerDrawable="@drawable/flex_box_divider"
+                    app:layout_constraintTop_toBottomOf="@id/program_subitem_gfund_layout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:id="@+id/program_subitem_sfund_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_medium"
+                        android:maxLines="1"
+                        android:text="@string/funding_forms_self"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_sfund_o_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="@string/educations_form_full_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_sfund_z_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="@string/educations_form_extramural"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_sfund_oz_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="@string/educations_form_part_time"
+                        android:textColor="@color/colorIammPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_education_form_outlined_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                />
+
+                <TextView
+                        android:id="@+id/program_subitem_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_light"
+                        android:maxLines="1"
+                        android:text="₽ 75,000"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:background="@drawable/study_program_price_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

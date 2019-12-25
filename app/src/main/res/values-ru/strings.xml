@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Абитуриент Политеха</string>
+
+    <string name="study_programs_valued">%1$d учебных программ</string>
+    <string name="full_time_valued">Очная | %1$d мест</string>
+    <string name="extramural_valued">Заочная | %1$d мест</string>
+    <string name="part_time_valued">Очно-заочная | %1$d мест</string>
+    <string name="left_valued">и ещё %1$d…</string>
+    <string name="directorate_persons_valued">Сотрудников дирекции: %1$d чел.</string>
+    <string name="subdepartments_valued">Внутренних подразделений: %1$d</string>
+    <string name="subprograms_valued">Поднаправлений: %1$d</string>
+
+
+    <string name="add_to_calendar">Добавить в календарь</string>
+    <string name="calendar_title">Событие приёмной кампании Политеха</string>
+    <string name="calendar_message">Будет добавлено событие \"%1$s\".\nДата: %2$s</string>
+
+    <string name="dialog_action_open_site">Открыть сайт</string>
+    <string name="dialog_site_url">Будет открыта внешняя ссылка в Вашем браузере.\nАдрес сайта: %1$s</string>
+    <string name="dialog_action_dial">Позвонить</string>
+    <string name="dialog_phone_number">Будет открыто приложение для набора номера и совершения звонка.\nНомер телефона: %1$s</string>
+    <string name="dialog_action_write_email">Написать письмо</string>
+    <string name="dialog_email">Будет открыто почтовое приложение для написания письма.\nАдрес почты: %1$s</string>
+
+
+    <string name="available_education_forms">Доступные формы обучения</string>
+    <string name="available_sub_programs">Поднаправления</string>
+
+    <string name="documents">Документы</string>
+
+    <string name="card_action_url">Открыть сайт</string>
+    <string name="card_action_dial">Позвонить</string>
+    <string name="card_action_mail">Написать</string>
+
+    <string name="full_description">Полное описание</string>
+
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+
+    <string name="upcoming_events">Предстоящие события</string>
+    <string name="outdated_events">Прошедшие события</string>
+
+    <string name="persons_responsibilities">Обязанности</string>
+    <string name="persons_positions">Занимаемые должности</string>
+
+    <string name="person_contacts">Контакты</string>
+    <string name="person_degree">Ученое звание</string>
+
+
+    <string name="title_timeline">Ход приёмной комиссии</string>
+    <string name="title_structure">Структура университета</string>
+    <string name="title_locations">Ключевые локации</string>
+    <string name="title_questions">Основные вопросы</string>
+
+    <string name="menu_filter_locations">Фильтрация маркеров</string>
+    <string name="locations_filter_option_others">Остальные корпуса</string>
+    <string name="locations_filter_option_with_enroll">Ведётся приём</string>
+
+    <string name="institute_ih">Гуманитарный Институт</string>
+    <string name="institute_icst">Институт Компьютерных Наук и Технологий</string>
+    <string name="institute_iamm">Институт Прикладной Математики и Механики</string>
+    <string name="institute_iets">Институт Энергетики и Транспортных Систем</string>
+    <string name="institute_ice">Инженерно-Строительный Институт</string>
+    <string name="institute_immet">Институт Металлургии, Машиностроения и Транспорта</string>
+    <string name="institute_ipnt">Институт Физики, Нанотехнологий и Телекоммуникаций</string>
+    <string name="institute_iimet">Институт Промышленного Менеджмента, Экономики и Торговли</string>
+    <string name="institute_iiep">Институт Международных Образовательных Программ</string>
+    <string name="institute_iamt">Институт Передовых Производственных Технологий</string>
+
+
+    <string name="abbreviation_ih">ГИ</string>
+    <string name="abbreviation_icst">ИКНТ</string>
+    <string name="abbreviation_iamm">ИПММ</string>
+    <string name="abbreviation_iets">ИЭТС</string>
+    <string name="abbreviation_ice">ИСИ</string>
+    <string name="abbreviation_immet">ИММиТ</string>
+    <string name="abbreviation_ipnt">ИФНиТ</string>
+    <string name="abbreviation_iimet">ИПМЭиТ</string>
+    <string name="abbreviation_iiep">ИМОП</string>
+    <string name="abbreviation_iamt">ИППТ</string>
+
+
+    <string name="buildings_main_building">Главное здание</string>
+
+
+    <string name="menu_entrance_array_item_01">Необходимые документы</string>
+    <string name="menu_entrance_array_item_02">Правила приёма</string>
+    <string name="menu_entrance_array_item_03">Почему Политех?</string>
+    <string name="menu_entrance_array_item_04">Контакты</string>
+    <string name="menu_entrance_array_item_05">Военная кафедра</string>
+    <string name="menu_entrance_array_item_06">Поступление иностранных граждан</string>
+    <string name="menu_entrance_array_item_07">Общежития</string>
+
+
+    <string name="funding_forms_government">Бюджет</string>
+    <string name="funding_forms_self">Контракт</string>
+
+
+    <string name="educations_form_full_time">Очная</string>
+    <string name="educations_form_extramural">Заочная</string>
+    <string name="educations_form_part_time">Очно-заочная</string>
+
+
+    <string name="institute_content_study_programs">Учебные программы</string>
+    <string name="institute_content_about">Про Институт</string>
+    <string name="institute_content_departments">Подразделения</string>
+    <string name="institute_content_directorate">Дирекция</string>
+    <string name="institute_content_contacts">Контакты</string>
+    <string name="institute_content_show_on_map">Показать на карте</string>
+
+
+    <string name="department_content_employees">Сотрудники</string>
+    <string name="department_content_info">Информация</string>
+    <string name="department_content_structure">Структура</string>
+    <string name="department_content_description">Описание</string>
+    <string name="department_content_contacts">Контакты</string>
+
+
+    <string name="academic_degree_assistant">Доцент</string>
+    <string name="academic_degree_candidate">Кандидат наук</string>
+    <string name="academic_degree_doctor">Доктор наук</string>
+    <string name="academic_degree_no">Нет степени</string>
+
+    <string name="position_director">Директор</string>
+    <string name="position_acting_director">И.о. директора</string>
+    <string name="position_head_of_department">Заведующий кафедрой</string>
+    <string name="position_assistant">Доцент</string>
+    <string name="position_professor">Профессор</string>
+    <string name="position_resp_international">Ответственный за международную деятельность</string>
+    <string name="position_resp_full_time_students">Ответственный за работу со студентами очной формы обучения</string>
+
+</resources>
