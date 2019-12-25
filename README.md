@@ -37,4 +37,4 @@ gradlew assembleDebug
 В корне проекта лежит собранный APK файл подписанный дебажным ключом `spbspu-applicant.apk`. Данный файл необходимо запустить на Android устройстве, после чего установить, а также предоставить разрешения на установку, если потребуется.
 
 ## Дополнительно. Демонстрация работы
-[Скринкаст с демонстрацией работы приложения](https://github.com/deledzis/SPbSPU-Applicant/blob/master/screencast/screencast.mp4)
+[Скринкаст с демонстрацией работы приложения](https://vk.com/away.php?utf=1&to=https%3A%2F%2Fyoutu.be%2FwfuFaOCyHpc)
